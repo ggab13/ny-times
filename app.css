@@ -5,7 +5,7 @@
  nav {
   position: sticky; 
   top: 0;  
-  padding: 3px 1px ;
+  padding: 2px 1px ;
   display: grid;
   grid-template-areas: 'menu logo profile';
   grid-template-columns:1fr 2fr 1fr; 
@@ -18,8 +18,7 @@
 }
 .left-nav {
   grid-area:menu;     
-  display: grid;
-  
+  display: grid;  
   grid-template-columns:2fr 2fr 8fr; 
   justify-content: space-around;
   justify-items: center;
@@ -36,7 +35,7 @@
   text-decoration: none;
   font-size: 0.8em;
 }
-.logo-nav {
+.logo-nav-header {
   grid-area:logo;
 }
 .right-nav {
@@ -49,7 +48,7 @@
   -webkit-transition: ease 0.6s;
   transition: ease 0.6s;
   white-space: nowrap;
-  vertical-align: middle;
+  vertical-align: inherit;  
   background-color: #567b95;
   border: 1px solid #326891;
   color: #fff;
@@ -62,6 +61,7 @@
   letter-spacing: 0.05em;
   padding: 11px 12px 8px;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 .main-header{
   flex-direction: row;
@@ -389,8 +389,7 @@ aside img {
     flex-direction: row;   
     height: 100px;
     justify-content: center;
-    align-content: center;
-   
+    align-content: center;  
     
   }
   .story-footer-social button {
@@ -537,4 +536,22 @@ footer {
 
 .all-links .subscribe ul:nth-child(3) {
   border-top: 1px solid rgb(226, 226, 226);
+}
+.footer-list {
+  display: flex;
+  
+  justify-content: center;
+}
+.footer-list > li{
+  display: inline;
+
+}
+.footer-list > li{
+  display: inline;
+  font-size: 12px;
+  padding: 10px;
+}
+.footer-list a {
+  text-decoration: none;
+  color:rgb(116, 113, 113)
 }
